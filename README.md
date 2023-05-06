@@ -1,5 +1,5 @@
 # AutoYTPlaylist
-google app script for spread sheet to update YT playlsit automatically
+google app script for spread sheet to add videos to YT playlsit automatically
 features:
 * specify channels
 * scan for all your subscribed channels
