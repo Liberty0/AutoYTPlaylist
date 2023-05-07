@@ -14,16 +14,15 @@ features:
 4. click the [+] on the right of [service] around left-side of the page
 5. scroll down and select Youtube Data API v3 > [add]
 6. click the [+] on the right of [file] around left-top of the page
-7. copy-paste the content of `code4sheet1.gs` to replace the template in the editor
+7. copy-paste the content of `timeTrigger.gs` to replace the template in the editor
 - a. if you would like to get videos from all your subscribbed channels
   1. again, click the [+] on the right of [file] around left-top of the page
-  2. copy-paste the content of `code4sheet2.gs` to replace the template in the editor
-  3. you should found 2 appearence of "シート2" in the code, change them to your sheet name (ex: sheet1, シート1, 工作表1...)
-  4. click 🖬(save) icon 
-  5. in the droplist next to **`debug`**, select `getSubscribedChannels`
-  6. click ▶️**`run`** (now you have a channelID list of your subscribed channels in the column B)
-  7. select `getChannelName` in the droplist and run (now the corresponding channel names in the column A)
-  8. switch to **`code4sheet1.gs`** from the file list on left
+  2. copy-paste the content of `manualTrigger.gs` to replace the template in the editor
+  3. click 🖬(save) icon 
+  4. in the droplist next to **`debug`**, select `getSubscribedChannels`
+  5. click ▶️**`run`** (now you have a channelID list of your subscribed channels in the column B)
+  6. select `getChannelName` in the droplist and run (now the corresponding channel names in the column A)
+  7. switch to **`code4sheet1.gs`** from the file list on left
 - b. if you would like to choose the channels by yourself
 
 8. you should found 2 appearence of "シート1" in the code, change them to your sheet name (ex: sheet1, 工作表1...)
