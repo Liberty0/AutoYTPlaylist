@@ -11,13 +11,8 @@ function addNewVideosToPlaylist2() {
     //var playlistId = data[i][2]; // activate if playlist to add is changing
     var searchQuery = data[i][3].toLowerCase().split(";"); // split the cell value into an array of keywords
 
-    // get channel name from channelID
-    var channelResponse = YouTube.Channels.list('snippet', { id: channelId });
-    var channelName = channelResponse.items[0].snippet.title;
-    Logger.log(channelName)
-
     // get videos uploaded in recent [NDays] days
-    var NDays = 1;
+    var NDays = 2;
     var now = new Date();
     var NDaysAgo = new Date(now.getTime() - (NDays * 24 * 60 * 60 * 1000));
     var searchResponse = YouTube.Search.list('id,snippet', {
@@ -54,6 +49,11 @@ function addNewVideosToPlaylist2() {
         }
       };
 
+      // get channel name from channelID
+      var channelResponse = YouTube.Channels.list('snippet', { id: channelId });
+      var channelName = channelResponse.items[0].snippet.title;
+      Logger.log(channelName)
+      
       Logger.log(videoIds[k])
 
       if (videoIds.length > 0) { // check if videoIds is not empty
