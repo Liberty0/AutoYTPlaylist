@@ -3,12 +3,9 @@ function addNewVideosToPlaylist2() {
   var dataRange = sheet.getDataRange();
   var data = dataRange.getValues();
 
-  var playlistId = data[1][2]; // activate if playlist to add is fixed
-  Logger.log(playlistId)
-
   for (var i = 1; i < data.length; i++) {
     var channelId = data[i][1];
-    //var playlistId = data[i][2]; // activate if playlist to add is changing
+    var playlistId = data[i][2]; // activate if playlist to add is changing
     var searchQuery = data[i][3].toLowerCase().split(";"); // split the cell value into an array of keywords
 
     // get videos uploaded in recent [NDays] days
