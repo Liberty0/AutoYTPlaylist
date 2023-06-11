@@ -33,3 +33,14 @@ features:
 13. back to app script windwon, select `addNewVideosToPlaylist2` in the droplist and run
 
 * you should met some warning and request for authority to access your spreadsheet and YT account during your first runs, please accept them 
+
+## How to run automatically
+
+1. In the Google Apps Script editor, click on the "Triggers" icon (clock-shaped) on the left sidebar.
+2. Click on the "Add Trigger" button at the bottom right corner of the page.
+3. In the dialog that appears, configure the trigger as follows:
+    * Choose the addNewVideosToPlaylist2 function from the "Run" dropdown menu.
+    * Select the event source as "Time-driven."
+    * Choose the time interval you prefer (e.g., every day, every hour, etc.).
+    * Click the "Save" button to create the trigger.
+4. You might be asked to authorize the script and grant necessary permissions. Follow the prompts to provide the required permissions.
